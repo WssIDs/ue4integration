@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2016.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2017.
 
 namespace UnrealBuildTool.Rules
 {
@@ -102,7 +102,7 @@ namespace UnrealBuildTool.Rules
 					linkExtension = "_vc.lib";
 					dllExtension = ".dll";
 					copyThirdPartyPath = "../XBoxOne"; // XBoxOne still doesn't seem to support plugins with .dlls
-					bAddDelayLoad = true;
+					bAddDelayLoad = false;
 					break;
 				case UnrealTargetPlatform.PS4:
 					linkExtension = "_stub.a";
