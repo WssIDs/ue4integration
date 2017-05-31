@@ -5,6 +5,7 @@
 #include "Map.h"
 #include "Runtime/Launch/Resources/Version.h"
 #include "Sound/SoundAttenuation.h"
+#include "AudioDevice.h"
 #include "FMODAudioComponent.generated.h"
 
 // Event property
@@ -166,7 +167,7 @@ class FMODSTUDIO_API UFMODAudioComponent : public USceneComponent
 	UFUNCTION(BlueprintCallable, Category="Audio|FMOD|Components")
 	void SetParameter(FName Name, float Value);
 
-	/** Set a parameter into the event */
+	/** Get parameter value from the event */
 	UFUNCTION(BlueprintCallable, Category="Audio|FMOD|Components")
 	float GetParameter(FName Name);
 
